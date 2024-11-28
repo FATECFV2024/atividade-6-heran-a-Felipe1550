@@ -15,12 +15,14 @@ public class Mensalista extends Empregado {
     }
 
     public void calcularSalario() {
-        if (cargo.equalsIgnoreCase("Junior")) {
+        if (cargo.equals("Junior")) {
             salario = 2500;
-        } else if (cargo.equalsIgnoreCase("Pleno")) {
+        } else if (cargo.equals("Pleno")) {
             salario = 3500;
-        } else {
+        } else if (cargo.equals("Senior")) {
             salario = 5500;
+        } else {
+            salario = 0;
         }
     }
 }
